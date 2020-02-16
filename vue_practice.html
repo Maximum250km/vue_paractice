@@ -1,0 +1,27 @@
+<body>
+	<script src="https://unpkg.com/vue@2.5.17"></script>
+  <script src="practice_vue.js"></script>
+
+	<div id="app">
+  	<button id ="b-button" v-bind:title= "loggedInButton">購入</button>
+  	{{items[0].price * items[0].quantity }}
+	</div>
+
+
+<div id="hello">
+  <p>{{message}}</p>
+</div>
+
+<script>
+  //confrim that vue has been defined as global variable
+  console.assert(typeof Vue !== 'undefined');
+  new Vue({
+    el: '#hello',
+    data: {
+      message: 'hello!'
+    }
+  });
+
+</script>
+
+</body>
